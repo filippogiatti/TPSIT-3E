@@ -1,0 +1,30 @@
+//esercizio 2
+#include <stdio.h>
+
+int main() {
+    float prezzo;
+    char scelta;
+
+    do {
+        printf("Inserisci il prezzo del prodotto: ");
+        scanf("%f", &prezzo);
+
+        float sconto = 0.0;
+        if (prezzo >= 0 && prezzo <= 500) {
+            sconto = prezzo * 0.1; // sconto del 10%
+        } else if (prezzo >= 501 && prezzo <= 1000) {
+            sconto = prezzo * 0.2; // sconto del 20%
+        } else if (prezzo > 1000) {
+            sconto = prezzo * 0.3; // sconto del 30%
+        }
+
+        float prezzoNetto = prezzo - sconto;
+        printf("Lo sconto applicato è: %.2f€\n", sconto);
+        printf("Il prezzo netto è: %.2f€\n", prezzoNetto);
+
+        printf("Vuoi inserire un'altro prodotto? (s/n): ");
+        scanf(" %c", &scelta);
+    } while (scelta == 's' || scelta == 'S');
+
+    return 0;
+}
