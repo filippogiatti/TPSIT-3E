@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main() { //dichiarazione variabili
     int N, num;
     int sommaPositivi = 0, sommaNegativi = 0, conteggioPositivi = 0, conteggioNegativi = 0;
     float mediaPositivi = 0, mediaNegativi = 0;
@@ -28,7 +28,7 @@ int main() {
     if (conteggioNegativi != 0) {
         mediaNegativi = (float)sommaNegativi / conteggioNegativi;
     }
-
+    //output
     printf("Somma dei numeri positivi: %d\n", sommaPositivi);
     printf("Somma dei numeri negativi in valore assoluto: %d\n", sommaNegativi);
     printf("Conteggio dei numeri positivi: %d\n", conteggioPositivi);
