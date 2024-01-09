@@ -18,9 +18,9 @@ int main()
     // Calcolo della somma dei primi numeri primi alternati fino a N
     while (num <= N)
     {
-        primo = 1; // Assume che il num sia primo
+        primo = 1; // Assume che il numero sia primo
 
-        // Verifica se numero_corrente e' divisibile per un numero tra 2 e num-1
+        // Verifica se numero_corrente e' divisibile per un numero tra 2 e il numero primo-1
         for (int i = 2; i < num; i++)
         {
             if (num % i == 0)
